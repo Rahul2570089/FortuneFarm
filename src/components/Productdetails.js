@@ -7,7 +7,7 @@ function Productdetails({ item }) {
   };
   const del = async () => {
     await axios
-      .delete("http://35.192.98.172/api/deleteprod/?_id=" + item?._id)
+      .delete("http://pullventure.live/api/deleteprod/?_id=" + item?._id)
       .then((res) => {
         if (res.status === 204) {
           alert("successfully delete");

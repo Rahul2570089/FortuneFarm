@@ -7,7 +7,7 @@ const Shopkeeperdisplay = ({ item }) => {
   };
   const del = async () => {
     await axios
-      .delete("http://35.192.98.172/api/deletesk/?_id=" + item?._id)
+      .delete("http://pullventure.live/api/deletesk/?_id=" + item?._id)
       .then((res) => {
         if (res.status === 204) {
           alert("successfully delete");
